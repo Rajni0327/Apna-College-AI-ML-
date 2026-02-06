@@ -158,3 +158,104 @@
 
 
 ##for loop
+
+# string = "Hello"
+# #in = membership operator
+# for var in string:
+#     print(var)
+
+# string = "Hello" #o
+# if 'o' in string:
+#     print("present")
+
+# for i in range(5):
+#     print(i)
+
+
+# word = "artificial intelligence"
+
+# # count the number of i in the word
+# count = 0
+# for char in word:
+#     if (char == 'i'):
+#         count += 1
+
+# print("Number of i's :", count)
+
+
+# print vowels count of the given string
+
+# word = "artificial"
+# count = 0
+# for char in word:
+#     if (char == 'a' or char == 'e' or char == 'i' or char == 'o' or char == 'u'):
+#         count += 1
+
+# print("Number of vowels :", count)
+
+
+# range() -> used to generate a sequence of numbers
+#  range(start, stop, step)
+
+
+# for i in range(5):
+#     print(i)
+
+# for i in range(1,6):
+#     print(i)
+
+# for i in range(1, 11, 2):
+#     print(i)
+
+
+
+#print sum of first n natural numbers
+
+# n = int(input("Enter a number: "))
+# sum = 0
+# for i in range(1, n+1):
+#     sum += i
+
+# print ("sum = " ,sum)
+
+
+## functions -----------------------------
+# -> block of code that performs a specific task
+# -> reusable code
+
+# def hello():
+#     print("Hello World") #function definition
+
+# hello() #function call
+
+
+# # parameters 
+# def sum(a, b):
+#     s = a + b
+#     return s
+
+# ans = sum(2, 3) #function call with arguments
+# print(ans)
+# # or
+# print(sum(2, 3)) 
+
+
+# def avg(a, b, c):
+#     s = a + b + c
+#     return s/3
+
+# print(avg(2, 3, 4))
+
+
+
+# # default parameters
+# def sum(a , b = 1):
+#     return a + b
+
+# print(sum(2)) #b will take default value 1
+
+
+
+# types of functions
+# 1. built-in functions -> pre-defined functions in python
+# 2. user-defined functions -> functions defined by the user
