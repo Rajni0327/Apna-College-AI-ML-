@@ -13,21 +13,6 @@ This tutorial covers the following Python fundamentals:
 - Input and Output Operations
 - Operator Precedence
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Python 3.x installed on your system
-- Basic understanding of programming concepts (helpful but not required)
-
-### Running the Code
-
-Simply run the Python file:
-
-```bash
-python basics.py
-```
-
 ## 📖 Topics Covered
 
 ### 1. Variables
