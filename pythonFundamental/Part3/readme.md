@@ -10,19 +10,6 @@ A comprehensive guide to Python's fundamental data structures including strings,
 - Dictionaries (Key-Value Pairs, Methods)
 - Sets (Unique Values, Set Operations)
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Python 3.x installed
-- Understanding of Python basics (variables, loops, functions)
-
-### Running the Code
-
-```bash
-python data_structures.py
-```
-
 ## 📖 Topics Covered
 
 ### 1. Strings

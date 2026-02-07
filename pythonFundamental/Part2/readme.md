@@ -15,19 +15,6 @@ A comprehensive guide to Python control flow statements, loops, and functions. T
 - Lambda Functions
 - Higher-Order Functions
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Python 3.10+ (for match-case statements)
-- Completion of Python basics (variables, operators, data types)
-
-### Running the Code
-
-```bash
-python control_flow.py
-```
-
 ## 📖 Topics Covered
 
 ### 1. Conditional Statements
