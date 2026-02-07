@@ -12,12 +12,6 @@ A comprehensive guide to Python's fundamental data structures including strings,
 
 ## 🚀 Getting Started
 
-### Running the Code
-
-```bash
-python data_structures.py
-```
-
 ## 📖 Topics Covered
 
 ### 1. Strings
