@@ -10,8 +10,6 @@ A comprehensive guide to Python's fundamental data structures including strings,
 - Dictionaries (Key-Value Pairs, Methods)
 - Sets (Unique Values, Set Operations)
 
-## 🚀 Getting Started
-
 ## 📖 Topics Covered
 
 ### 1. Strings
