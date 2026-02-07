@@ -12,11 +12,6 @@ A comprehensive guide to Python's fundamental data structures including strings,
 
 ## 🚀 Getting Started
 
-### Prerequisites
-
-- Python 3.x installed
-- Understanding of Python basics (variables, loops, functions)
-
 ### Running the Code
 
 ```bash
