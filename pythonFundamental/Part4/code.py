@@ -65,27 +65,27 @@
 
 
 
-# Attributes -----------------------------------------------
+# # Attributes -----------------------------------------------
 
-# class attributes - belong to class --common 
+# # class attributes - belong to class --common 
 
-# instance attribute - belong to object --unique,different
+# # instance attribute - belong to object --unique,different
 
-class Student:
-    college_name = "ABC college" #class
+# class Student:
+#     college_name = "ABC college" #class
 
-    def __init__(self, name, cgpa):
-        self.name = name #instance 
-        self.cgpa = cgpa 
-
-
-stu1 = Student("Sumita", 9.8)
-print(stu1.name)
-print(Student.college_name)  #this automatically calls the instance attributes
+#     def __init__(self, name, cgpa):
+#         self.name = name #instance 
+#         self.cgpa = cgpa 
 
 
-# instance attribute have higher priority than class attribute 
-# if they have a same name attribute
+# stu1 = Student("Sumita", 9.8)
+# print(stu1.name)
+# print(Student.college_name)  #this automatically calls the instance attributes
+
+
+# # instance attribute have higher priority than class attribute 
+# # if they have a same name attribute
 
 
 # Methods -----------------------------------
@@ -106,7 +106,30 @@ class Laptop:
     def get_info(self):    #instance method
         print(f"laptop has {self.RAM} RAM & {self.storage}{self.storage_type}")
 
+    @staticmethod
+    def calc_discount(price, discount):
+        final_price = price - (discount * price / 100)
+        print(f"discounted price = {final_price}")
+
 
 l1 = Laptop("16gb", "512gb")
 l2 = Laptop("8gb", "256gb")
+
+
+Laptop.get_storage_type()
+
+l1.get_storage_type  #calling using object
+
+# fnx => (price, distant) =. final_price (100, 10)  #in python the underscore used between numbers is ignored 
+
+l1.calc_discount(40_000, 10)
+
+
+
+
+
+
+
+
+
 
