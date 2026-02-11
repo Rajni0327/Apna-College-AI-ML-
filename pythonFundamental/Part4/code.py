@@ -88,48 +88,41 @@
 # # if they have a same name attribute
 
 
-# Methods -----------------------------------
-# instance , class and static methods
 
 
-class Laptop:
-    storage_type = "ssd"
+# Product Store 
+#design and create an online store for Products (name, price)
+# track total products being created 
+# create a static method to calculate discount on each product based on a % parameter
 
-    def __init__(self, RAM, storage ):
-        self.Ram = RAM 
-        self.storage = storage
 
-    @classmethod            #decorator 
-    def get_storage_type(cls):     #class method
-        print(f"storage type = {cls.storage_type}")
+class Product:
+    count= 0
 
-    def get_info(self):    #instance method
-        print(f"laptop has {self.RAM} RAM & {self.storage}{self.storage_type}")
+    def __init__(self, name , price):
+        self.name = name
+        self.price = price
+        Product.count += 1
+    
+    def get_info(self):   #instance method
+        print(f"price of {self.name} is Rs.{self.price}")
+
+    @classmethod
+    def get_count(cls):
+        print(f"total products in store = {cls.count}")
 
     @staticmethod
     def calc_discount(price, discount):
-        final_price = price - (discount * price / 100)
-        print(f"discounted price = {final_price}")
+        print(f"discounted price = {price - (price * discount / 100)}")
 
+p1 = Product("phone", 10_000)
+p2 = Product("laptop", 40_000)
+p3 = Product("pen", 10)
 
-l1 = Laptop("16gb", "512gb")
-l2 = Laptop("8gb", "256gb")
+p1.get_info()
 
+Product.get_count()
 
-Laptop.get_storage_type()
-
-l1.get_storage_type  #calling using object
-
-# fnx => (price, distant) =. final_price (100, 10)  #in python the underscore used between numbers is ignored 
-
-l1.calc_discount(40_000, 10)
-
-
-
-
-
-
-
-
+p1.calc_discount(p1.price, 12)
 
 
