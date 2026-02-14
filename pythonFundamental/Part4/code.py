@@ -1,91 +1,91 @@
-# #  class ---------------------------------------------------
-# #  blueprint of an object
+#  class ---------------------------------------------------
+#  blueprint of an object
 
 
-# # object ----------------------------------------------------
-# # instance of a class
-# class student:
-#     subject = "python"
-#     college = "abc"
-#     year = "4th year"
+# object ----------------------------------------------------
+# instance of a class
+class student:
+    subject = "python"
+    college = "abc"
+    year = "4th year"
 
     
 
 
-# stu1 = student()
-# stu2 = student()
-# print(stu1.subject, stu1.college, stu1.year)
+stu1 = student()
+stu2 = student()
+print(stu1.subject, stu1.college, stu1.year)
 
 
 
 
-# # constructor  --------------------------------------------------
-# #  function that creates an object
+# constructor  --------------------------------------------------
+#  function that creates an object
 
 
-# # __init__method
-# # calls everytime when we create an object
-
-# # class Student:
-# #     def __init__(self):
-# #         print("constructor was called...")
-
-# # stu1 = Student()
+# __init__method
+# calls everytime when we create an object
 
 # class Student:
-#     def __init__(self, name, cgpa):
-#         self.name = name
-#         self.cgpa = cgpa
+#     def __init__(self):
+#         print("constructor was called...")
 
-#     def get_cgpa(self):   #stu1-as a reference , it will change for every object i.e stu1,stu2,stu3,stu4
-#         return self.cgpa
+# stu1 = Student()
 
-# stu1 = Student("Sanaya", 8.0)
-# stu2 = Student("Sumitra", 7.8)
-# stu3 = Student("Ali", 6.9)
-# stu4 = Student("Mohit", 9.8)
+class Student:
+    def __init__(self, name, cgpa):
+        self.name = name
+        self.cgpa = cgpa
 
-# print(stu1.name, stu1.cgpa)
-# print(stu2.name)
-# print(stu3.name)
-# print(stu4.name)
+    def get_cgpa(self):   #stu1-as a reference , it will change for every object i.e stu1,stu2,stu3,stu4
+        return self.cgpa
 
-# print(f"{stu1.name} has cgpa = {stu1.get_cgpa()}")
+stu1 = Student("Sanaya", 8.0)
+stu2 = Student("Sumitra", 7.8)
+stu3 = Student("Ali", 6.9)
+stu4 = Student("Mohit", 9.8)
 
+print(stu1.name, stu1.cgpa)
+print(stu2.name)
+print(stu3.name)
+print(stu4.name)
 
-# # types of constructors
-
-# # default = (self) 
-# # parameterized = (self, ... , ...)
-
-# # we can create only one constructor per class
-# # python does not supports multiple constructors like cpp and java , if we do so , it takes the last one by default
+print(f"{stu1.name} has cgpa = {stu1.get_cgpa()}")
 
 
+# types of constructors
+
+# default = (self) 
+# parameterized = (self, ... , ...)
+
+# we can create only one constructor per class
+# python does not supports multiple constructors like cpp and java , if we do so , it takes the last one by default
 
 
 
-# # Attributes -----------------------------------------------
-
-# # class attributes - belong to class --common 
-
-# # instance attribute - belong to object --unique,different
-
-# class Student:
-#     college_name = "ABC college" #class
-
-#     def __init__(self, name, cgpa):
-#         self.name = name #instance 
-#         self.cgpa = cgpa 
 
 
-# stu1 = Student("Sumita", 9.8)
-# print(stu1.name)
-# print(Student.college_name)  #this automatically calls the instance attributes
+# Attributes -----------------------------------------------
+
+# class attributes - belong to class --common 
+
+# instance attribute - belong to object --unique,different
+
+class Student:
+    college_name = "ABC college" #class
+
+    def __init__(self, name, cgpa):
+        self.name = name #instance 
+        self.cgpa = cgpa 
 
 
-# # instance attribute have higher priority than class attribute 
-# # if they have a same name attribute
+stu1 = Student("Sumita", 9.8)
+print(stu1.name)
+print(Student.college_name)  #this automatically calls the instance attributes
+
+
+# instance attribute have higher priority than class attribute 
+# if they have a same name attribute
 
 
 
