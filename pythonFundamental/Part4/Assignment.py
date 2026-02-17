@@ -175,46 +175,69 @@
 # print(b1.brand, b1.model, b1.engine_cc)
 
 
-# answer 6 --------------------------------------------------------
+# # answer 6 --------------------------------------------------------
 
-from abc import ABC, abstractmethod
+# from abc import ABC, abstractmethod
 
-class Employee(ABC):
-    @abstractmethod
-    def calculate_salary(self):
-        pass
+# class Employee(ABC):
+#     @abstractmethod
+#     def calculate_salary(self):
+#         pass
 
-class Intern(Employee):
-    def __init__(self, stipend):
-        self.stipend = stipend
+# class Intern(Employee):
+#     def __init__(self, stipend):
+#         self.stipend = stipend
 
-    def calculate_salary(self):
-        return self.stipend
+#     def calculate_salary(self):
+#         return self.stipend
     
-class FullTimeEmployee(Employee):
-    def __init__(self, monthly_salary):
-        self.monthly_salary = monthly_salary
+# class FullTimeEmployee(Employee):
+#     def __init__(self, monthly_salary):
+#         self.monthly_salary = monthly_salary
 
-    def calculate_salary(self):
-        return self.monthly_salary
-
-
-class ContractEmployee(Employee):
-    def __init__(self, hours_worked, rate_per_hour):
-        self.hours_worked = hours_worked
-        self.rate_per_hour = rate_per_hour
-
-    def calculate_salary(self):
-        return self.hours_worked * self.rate_per_hour
+#     def calculate_salary(self):
+#         return self.monthly_salary
 
 
-i1 = Intern(9000)
-f1 = FullTimeEmployee(60000)
-c1 = ContractEmployee(150, 500)
+# class ContractEmployee(Employee):
+#     def __init__(self, hours_worked, rate_per_hour):
+#         self.hours_worked = hours_worked
+#         self.rate_per_hour = rate_per_hour
 
-print(f"Intern Salary:{ i1.calculate_salary()}")
-print(f"Full Time Salary:{ f1.calculate_salary()}")
-print(f"Contract Salary:{ c1.calculate_salary()}")
+#     def calculate_salary(self):
+#         return self.hours_worked * self.rate_per_hour
+
+
+# i1 = Intern(9000)
+# f1 = FullTimeEmployee(60000)
+# c1 = ContractEmployee(150, 500)
+
+# print(f"Intern Salary:{ i1.calculate_salary()}")
+# print(f"Full Time Salary:{ f1.calculate_salary()}")
+# print(f"Contract Salary:{ c1.calculate_salary()}")
+
+
+
+# answer 7 -------------------------------------------------------
+
+# Constructor overloading in Python is achieved using default arguments because Python does not support multiple constructors directly.
+
+class Person :
+    def __init__(self, name, age = None, address = None ):
+        self.name = name
+        self.age = age  
+        self.address = address
+    
+    def display(self):
+        print(f"Name:{ self.name}")
+        print(f"Age:{ self.age}")
+        print(f"Address:{ self.address}")
+
+p1 = Person("Samay")
+p1.display()
+
+
+
 
 
 
