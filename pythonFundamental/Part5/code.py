@@ -3,7 +3,7 @@
 # Open 
 # Operations 
 # -read 
-# -write 
+# -write    
 # -append 
 # Close
 # delete
