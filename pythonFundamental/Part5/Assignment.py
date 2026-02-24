@@ -1,36 +1,36 @@
-# # Answer 1 --------------------------------------------
-# with open("names.txt","w") as f :
-#     print("enter 5 names :")
+# Answer 1 --------------------------------------------
+with open("names.txt","w") as f :
+    print("enter 5 names :")
 
-#     for i in range(5):
-#         name = input(f"enter {i+1} :")
-#         f.write(name +"\n") #each name in new line
+    for i in range(5):
+        name = input(f"enter {i+1} :")
+        f.write(name +"\n") #each name in new line
 
-# with open("names.txt", "r") as f :
-#     print("names are :")
+with open("names.txt", "r") as f :
+    print("names are :")
 
-#     for line in f :
-#         print(line.strip()) #removes extra newline while printing
-
-
-# # Amswer 2 -------------------------------------------
-
-# with open("log.txt","a") as f :
-#     f.write("Program run successfully!")
-
-# with open("log.txt","r") as f:
-#     logs = f.read()
-#     print("logs")
+    for line in f :
+        print(line.strip()) #removes extra newline while printing
 
 
+# Amswer 2 -------------------------------------------
 
-# # Answer 3------------------------------------------------
+with open("log.txt","a") as f :
+    f.write("Program run successfully!")
 
-# lst = [5, 10, 15, 20, 25]
+with open("log.txt","r") as f:
+    logs = f.read()
+    print("logs")
 
-# new_list = [num for num in lst if num > 15]
 
-# print(new_list)
+
+# Answer 3------------------------------------------------
+
+lst = [5, 10, 15, 20, 25]
+
+new_list = [num for num in lst if num > 15]
+
+print(new_list)
 
 
 # answer 4 -------------------------------------------------
@@ -38,9 +38,9 @@
 import json
 
 cities = {
-    "New York": 8419600,
-    "Tokyo": 13929286,
-    "Delhi": 30291000
+    "jabalpur": 8419600,
+    "jaipur": 13929286,
+    "jaisalmer": 30291000
 }
 
 with open("cities.json", "w") as file:
@@ -64,3 +64,16 @@ with open("cities.json", "w") as file:
 print("\nUpdated Cities and Populations:")
 for city, population in loaded_cities.items():
     print(f"{city}: {population}")
+
+
+# answer 5---------------------------------------------------
+
+try:
+    with open("data.txt","r") as f :
+            content = f.read()
+            print(content)
+except FileNotFoundError:
+  
+    print("File not found!")
+
+
