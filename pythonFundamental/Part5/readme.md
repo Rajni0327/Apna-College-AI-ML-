@@ -14,6 +14,7 @@ A beginner-friendly reference covering core Python concepts including file handl
 - [Exception Handling](#exception-handling)
 - [List Comprehensions](#list-comprehensions)
 - [JSON Module](#json-module)
+- The additional files are generated for the assignment
 
 ---
 
